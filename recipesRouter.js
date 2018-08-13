@@ -62,6 +62,7 @@ router.put("/:id", (req, res) => {
       return res.status(400).send(message);
     }
   }
+  console.log("this worked");
   if (req.params.id !== req.body.id) {
     const message = `Request path id (${
       req.params.id

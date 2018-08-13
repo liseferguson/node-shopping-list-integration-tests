@@ -120,7 +120,9 @@ function updateRecipe(recipe) {
     data: recipe,
     success: function(data) {
       getAndDisplayRecipes();
-    }
+    },
+    dataType: "json",
+    contentType: "application/json"
   });
 }
 
